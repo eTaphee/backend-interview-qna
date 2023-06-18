@@ -381,10 +381,37 @@ lock, monitor와 같이 임계 영역을 제어합니다.
 <summary>RDBMS, NoSQL</summary>
 
 <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
-RDBMS는 객체들의 관계를 구조화하여 데이터를 저장하는 데이터베이스입니다. SQL을 사용하여 데이터를 조회/추가/수정/삭제 할 수 있습니다.
-명확한 데이터 구조 보장 및 중복을 피할 수 있습니다.
+둘다 데이터를 저장, 관리하기 위한 데이터베이스 유형입니다.
 
-NOSQL은 RDBMS에 비해 자유로운 형태로 데이터를 저장할 수 있습니다.
+RDBMS는 객체들의 관계를 테이블/행/열로 구조화하여 데이터를 저장하는 데이터베이스입니다. 
+SQL을 사용하여 데이터를 조회/추가/수정/삭제 할 수 있습니다.
+명확한 데이터 구조 보장 및 중복을 피할 수 있습니다.
+- 정적 스키마
+- 제약 조건
+- 관계
+
+NOSQL은 RDBMS에 비해 자유로운 형태로 데이터를 저장할 수 있습니다. 수평적으로 확장이 가능합니다. 여러 형태의 NOSQL 데이터베이스가 있습니다.
+- 동적 스키마
+- 대용량 처리, 빠른 속도로 분산 환경에 특화
+- Key-Value(써봄)
+- Document(써봄)
+- Graph(안써봄)
+- WideColumn(안써봄)
+
+</details>
+
+### 백엔드(Backend)
+
+<summary>Authtication, Authroization</summary>
+
+<!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+- authentication: 입증, 증명 => 당신이 누구인지?
+- authorization: 허가, 인가 => 당신이 어떤 권한을 가지고 있는지?
+
+authentication(인증)은 사용자의 자격증명을 확인하여, 인식하는 로그인
+authorization(인가)는 로그인한 사용자가 자원에 액세스(CRUD)를 할 수 있는지 여부를 확인하는 권한부여
+
+authentication 통해서 사용자의 신원을 성공적으로 인증 된 후에 authorization 에서 권한 부여 작업이 발생합니다.
 
 </details>
 
